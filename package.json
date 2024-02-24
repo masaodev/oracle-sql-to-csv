@@ -1,0 +1,16 @@
+{
+  "name": "oracle-sql-to-csv",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "pkg ./src/execute.js --targets node16-win-x64 --output dist/oracleDbQueryToCSV.exe"
+  },
+  "author": "masao",
+  "license": "ISC",
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "dependencies": {
+    "oracledb": "^6.0.2"
+  }
+}
