@@ -1,0 +1,5 @@
+{
+    "DB_USER": "HOGEHOGE",
+    "DB_PASSWORD": "xxxxxxxxxxx",
+    "DB_CONNECT_STRING": "192.0.2.1:1523/HUGAHUGA"
+}
