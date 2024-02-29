@@ -1,5 +1,5 @@
-const fs = require('fs');
-const executeSqlQuery = require('./executeSqlQuery');
+import * as fs from 'fs';
+import executeSqlQuery from './executeSqlQuery';
 
 // コマンドライン引数から設定ファイルのパスとSQLファイルのパスとパラメータを取得
 const configFilePath = process.argv[2];

@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "pkg ./src/execute.js --targets node16-win-x64 --output dist/oracleDbQueryToCSV.exe"
+    "start": "node ./dist/execute.js",
+    "build": "tsc",
+    "build2": "pkg ./src/execute.js --targets node16-win-x64 --output dist/oracleDbQueryToCSV.exe"
   },
   "author": "masao",
   "license": "ISC",
   "devDependencies": {
-    "pkg": "^5.8.1"
+    "@types/node": "^20.11.20",
+    "@types/oracledb": "^6.2.1",
+    "pkg": "^5.8.1",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "oracledb": "^6.0.2"
