@@ -49,7 +49,7 @@ export async function executeOracleDbQuery(user:string, password:string, connect
     });
 
     // 列名とデータをCSV形式に変換
-    const csvContent = [columnNames.join(','), records?.map(record => columnNames.map(name => record[name]).join(','))].join('\n');
+    const csvContent = [columnNames.join(','), ...(records?.map(record => columnNames.map(name => record[name]).join(',')) ?? [])].join('\n');
 
     // BOMを追加してファイルに書き込み
     const BOM = "\ufeff";
